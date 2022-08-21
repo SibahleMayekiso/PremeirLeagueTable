@@ -11,7 +11,5 @@ app.listen(port, () => {
 });
 
 app.get('/', (req, res) => {
-    res.render('index', () =>{
-        console.log('Page loaded successfully');
-    })
+    res.render('index')
 })
