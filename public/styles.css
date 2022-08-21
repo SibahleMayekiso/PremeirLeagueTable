@@ -1,0 +1,60 @@
+html{
+   font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Nav styling */
+nav{
+    grid-column: 1/ span 3;
+}
+
+body{
+    margin: 0;
+    
+}
+.grid-container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    background-color: rgba(0, 0, 0, 0.455);
+}
+
+
+
+/*footer styling*/
+footer{
+    /* grid-row: 3/ span 1;*/
+    grid-column: 1/ 4; 
+    color: black;
+    height: 50rem;
+
+    background-color: blue;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 100% / 1fr 1fr 1fr;
+    background-color: red;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.sibahleCard{
+    grid-column: 1/ span 1;
+
+    padding: 2em;
+}
+
+p{
+    grid-column: auto;
+}
+
+.footSocials{
+    grid-row: auto;
+    grid-column: 3/ span 1;
+}
+.footSocials a{
+    text-decoration: none;
+    color: inherit;
+}
+.footSocials li{
+    list-style: none;
+}
