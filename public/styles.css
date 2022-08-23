@@ -5,12 +5,18 @@ html{
 nav{
     grid-column: 1/ span 3;
     background-color:darkgreen;
-    height: 300px;
-    justify-content: space-between;
 }
+.nav-content-container{
+    display: grid;
+    grid-template: 140px /1fr 1fr 1fr;
+    height: 100%;
+}
+.nav-content-container a{
+    grid-column: 2/ 3; 
+ }
 
 #premierLeagueLogo{
-    width: 500px;
+    width: 100%;
     height: 100%;
     background-color:chartreuse;
 }
@@ -24,16 +30,31 @@ body{
 .grid-container{
     height: 100vh;
     display: grid;
-    grid-template: 300px auto 500px / 1fr 1000px 1fr;
+    grid-template: auto auto auto / 1fr 1000px 1fr;
     background-color: rgba(0, 0, 0, 0.455);
 }
 .main-content-container{
     grid-row: 2/ span 1;
-    grid-column: 1/ span 3; 
+    grid-column: 2/ span 1; 
+
+    padding: 10px;
 }
 .main-content-container table{
     grid-column: 2/ 3; 
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: chocolate;
+
+    align-items: center;
 }
+
+.main-content-container th, tr, td{
+    grid-column: 2/ 3; 
+    border: 2px solid;
+    background-color: rgba(255, 255, 255, 0.508);
+}
+
 
 
 
