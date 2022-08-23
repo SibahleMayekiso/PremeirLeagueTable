@@ -4,36 +4,55 @@ html{
 /* Nav styling */
 nav{
     grid-column: 1/ span 3;
+    background-color:darkgreen;
+    height: 300px;
+    justify-content: space-between;
+}
+
+#premierLeagueLogo{
+    width: 500px;
+    height: 100%;
+    background-color:chartreuse;
 }
 
 body{
     margin: 0;
+    width: 100%;
+    height: 100%;
     
 }
 .grid-container{
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    grid-template: 300px auto 500px / 1fr 1000px 1fr;
     background-color: rgba(0, 0, 0, 0.455);
 }
+.main-content-container{
+    grid-row: 2/ span 1;
+    grid-column: 1/ span 3; 
+}
+.main-content-container table{
+    grid-column: 2/ 3; 
+}
+
 
 
 
 /*footer styling*/
 footer{
-    /* grid-row: 3/ span 1;*/
+    grid-row: 3/ span 1;
     grid-column: 1/ 4; 
     color: black;
-    height: 50rem;
+    height: 100%;
 
     background-color: blue;
 }
 
 .footer-container{
     display: grid;
-    grid-template-columns: 100% / 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: red;
-    justify-content: space-between;
+    justify-items: center;
     align-items: center;
     height: 100%;
 }
@@ -43,8 +62,11 @@ footer{
     padding: 2em;
 }
 
-p{
+.devCredits{
     grid-column: auto;
+}
+.devCredits a{
+    text-decoration: none;
 }
 
 .footSocials{
